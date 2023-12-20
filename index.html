@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBryg</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img class="logo" src="img/logo_sort_lang.jpg" alt="TrøjborgBryg logo"></a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Alkoholfri øl 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="udvalg.html">Udvalg</a>
+                    <a href="nyheder.html">Nyheder</a>
+                </div>
+            </div> 
+            
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Running Club</a>
+                    <a href="smagning.html">Alkoholfri ølsmagning</a>
+                </div>
+            </div> 
+
+            <div class="dropdown">
+                <button class="dropbtn">Inspiration 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Til madlavningen</a>
+                    <a href="ombygning.html">Lejligheder til alkoholfri øl</a>
+                </div>
+            </div> 
+
+            <div class="dropdown">
+                <button class="dropbtn">Om bryggeriet 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="historie.html">Historie</a>
+                    <a href="ombygning.html">Samarbejdspartnere</a>
+                    <a href="ombygning.html">Hvad siger andre?</a>
+                </div>
+            </div> 
+
+            <a href="kontakt.html">Kontakt</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+    </header>
+
+    <main>
+        <div class="forside_container">
+            <img class="forside_billede" src="img/forside/treforskellige.jpg" alt="Tre forskellige øl">
+            <div class="centered1">TrøjborgBryg</div>
+            <div class="centered2">Brygget dine favoritøl siden 2010</div>
+        </div>
+
+        <p class="forside_tekst">Velkommen til vores verden af alkoholfrie øl. Hvis du er på udkig efter din nye favorit alkoholfrie øl,
+        er du kommet til det rette sted. Med 7 forskellige varianter har vi en alkoholfri øl til en hver smag. 
+        <br>
+        <br>
+        Se vores spændende nyheder længere nede eller se hele vores udvalg af alkoholfrie øl ved at klikke 
+        <a class="link_button_hvid" href="udvalg.html">her</a>
+        </p>
+
+
+        <div class="smage_container" id="christmas">
+            <div class="dåse_overskrift" id="christmas_overskrift">
+                <h2>DRIVING HOME FROM CHRISTMAS</h2>
+            </div>
+            <div class="dåse">
+                <img class="dåse" src="img/daaser/christmas.jpg" alt="alkoholfri juleøl">
+            </div>
+            <div class="dåse_tekst">
+                <p>
+                    Det nyeste medlem af vores alkoholfrie familie. Vi har længe forsøgt at brygge en julespecial, 
+                    til vores alkoholfrie udvalg og nu lykkedes det endelig!
+                    <br>
+                    <br>
+                    Vi har brygget en jule alkoholfri øl, med smag af æble og kanel og den føles som et stort varmt kram.  
+                    Du kan næsten ikke undgå at komme i julestemning.
+                    <br>
+                    <br>
+                    Se hele vores udvalg af alkoholfrie øl ved at klikke 
+                    <a class="link_button_grøn" href="udvalg.html">her</a>
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="minigolf_overskrift">MINIGOLF OG ALKOHOLFRI ØL</h2>
+
+            <img class="camping_forside" src="img/smagning/camping.jpg" alt="TrøjborgBryg x CAMPING">
+
+            <p class="camping_forside_tekst">
+                Vi er meget stolte og ydmyge over at vise denne geniale nyhed. 
+                <br>
+                Skynd dig ind og
+                <a class="link_button_hvid" href="smagning.html#camping">læs mere her</a>
+            </p>
+        </section>
+
+        <section class="bryghus_forside">
+            <h2 class="bryghus_overskrift" >KOM IND I VORES HYGGELIGE BRYGHUS</h2>
+
+            <p class="bryghus_tekst">
+                Hop ned på Tordenskjoldsgade til vores bryghus og smag dig igennem vores helt fantastiske udvalg af alkoholfrie øl
+                <br>
+                <br>
+                Du kan finde information om hvornår vi har åbent ved at klikke 
+                <a class="link_button_grøn" href="kontakt.html">her</a> 
+            </p>
+
+            <img class="bryghus_billede" src="img/forside/bryggeriet.jpg" alt="tegning af bryghuset">
+        </section>
+
+        <section>
+            <form action="/action_page.php">
+                <div class="container">
+                    <h2 class="nyhedsbrev_overskrift" >Tilmeld nyhedsbrev</h2>
+                    <p>Hold dig opdateret på vores begivenheder og få besked når vi brygger nye smagsvarianter.</p>
+                </div>
+            
+                <div class="container">
+                    <input class="text_felt" type="text" placeholder="Navn" name="Navn" required>
+                    <input class="text_felt" type="text" placeholder="E-mail" name="mail" required>
+                </div>
+            
+                <div class="container">
+                    <input type="submit" value="Tilmeld her">
+                </div>
+            </form>
+        </section>
+        
+    
+    </main>
+
+
+    
+    <!-- footer -->
+    <footer>
+        <section class="footer_container">
+            <div class="adresse">
+                <h4 class="footer_overskrift">Find os her:</h4>
+                <p>
+                    Tordenskjoldsgade 32 <br>
+                    8200 Aarhus N <br>
+                    Danmark
+                </p>
+            </div>
+            <div class="kontakt">
+                <h4 class="footer_overskrift">Kontakt:</h4>
+                <p>
+                <a href="mailto:trøjborgbryg@outlook.dk">trøjborgbryg@outlook.com</a>
+                    <br>
+                <a href="tel:+4526241394">+45 26 24 13 94</a>
+                </p>
+            </div>
+            <div class="åbningstider">
+                <h4 class="footer_overskrift">Åbningstider:</h4>
+                <p>
+                    Mandag-torsdag: 12.00-21.00<br>
+                    Fredag-lørdag: 12.00-01.00<br>
+                </p>
+            </div>
+            <div class="sociale_medier">
+                <h4 class="footer_overskrift">Sociale medier:</h4>
+                <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/some/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/some/instragram.png" alt="instagram"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="img/some/tiktok.png" alt="tiktok"></a>
+                </div>
+            </div>
+        </section> 
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBryg nyheder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img class="logo" src="img/logo_sort_lang.jpg" alt="TrøjborgBryg logo"></a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Alkoholfri øl 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="udvalg.html">Udvalg</a>
+                    <a href="nyheder.html">Nyheder</a>
+                </div>
+            </div> 
+            
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Running Club</a>
+                    <a href="smagning.html">Alkoholfri ølsmagning</a>
+                </div>
+            </div> 
+
+            <div class="dropdown">
+                <button class="dropbtn">Inspiration 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Til madlavningen</a>
+                    <a href="ombygning.html">Lejligheder til alkoholfri øl</a>
+                </div>
+            </div> 
+
+            <div class="dropdown">
+                <button class="dropbtn">Om bryggeriet 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="historie.html">Historie</a>
+                    <a href="ombygning.html">Samarbejdspartnere</a>
+                    <a href="ombygning.html">Hvad siger andre?</a>
+                </div>
+            </div> 
+
+            <a href="kontakt.html">Kontakt</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+    </header>
+
+    <main>
+        <h1>VORES SENESTE NYHED</h1>
+
+        <!-- CHRISTMAS -->
+        <div class="smage_container">
+            <div class="dåse_overskrift">
+                <h2>DRIVING HOME FROM CHRISTMAS</h2>
+            </div>
+            <div class="dåse">
+                <img class="dåse" src="img/daaser/christmas.jpg" alt="lys alkoholfri øl">
+            </div>
+            <div class="dåse_tekst">
+                <p>
+                    Den seneste tilføjelse til vores alkoholfrie udvalg. Med smag af sød æble og varm kanel, 
+                    kan du ikke undgå at komme i julestemning med denne alkoholfrie øl. 
+                    <br>
+                    <br>
+                    Ingredienser: vand, bygmalt, humle, gær, æblesaft fra koncentrat, kanelstænger. 
+                    <br>
+                    <br>
+                    Egner sig godt til oste, desserter og selvfølgelig julefrokosten. 
+                    <br>
+                    <br>
+                     Indhold: 33 CL
+                    <br>
+                     Pris: 38 kr. 
+                </p>
+                <br>
+                
+                <button type="button" class="collapsible_hvid">Næringsindhold</button>
+                <div class="content">
+                    <table>
+                        <tr>
+                          <th>Næringsindhold</th>
+                          <th>Pr. 100 ml</th>
+                        </tr>
+                        <tr>
+                          <td>Energi</td>
+                          <td>230 kJ / 55 kcal</td>
+                        </tr>
+                        <tr>
+                          <td>Fedt</td>
+                          <td>0 g</td>
+                        </tr>
+                        <tr>
+                          <td>Kulhydrat</td>
+                          <td>5 g</td>
+                        </tr>
+                        <tr>
+                          <td>Heraf sukkerarter</td>
+                          <td>0,3 g</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>0,5 g</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- script til næringsinhold hvid-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible_hvid");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <section class="footer_container">
+            <div class="adresse">
+                <h4 class="footer_overskrift">Find os her:</h4>
+                <p>
+                    Tordenskjoldsgade 32 <br>
+                    8200 Aarhus N <br>
+                    Danmark
+                </p>
+            </div>
+            <div class="kontakt">
+                <h4 class="footer_overskrift">Kontakt:</h4>
+                <p>
+                <a href="mailto:trøjborgbryg@outlook.dk">trøjborgbryg@outlook.com</a>
+                    <br>
+                <a href="tel:+4526241394">+45 26 24 13 94</a>
+                </p>
+            </div>
+            <div class="åbningstider">
+                <h4 class="footer_overskrift">Åbningstider:</h4>
+                <p>
+                    Mandag-torsdag: 12.00-21.00<br>
+                    Fredag-lørdag: 12.00-01.00<br>
+                </p>
+            </div>
+            <div class="sociale_medier">
+                <h4 class="footer_overskrift">Sociale medier:</h4>
+                <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="img/some/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/some/instragram.png" alt="instagram"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="img/some/tiktok.png" alt="tiktok"></a>
+                </div>
+            </div>
+        </section> 
+    </footer>
+    
+</body>
+</html>

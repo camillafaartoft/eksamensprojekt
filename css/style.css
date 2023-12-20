@@ -1,0 +1,861 @@
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: #E3E6E4;
+}
+
+/* -- header -- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #3d431c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+  }
+.logo {
+    width: 210px;
+    padding-top: 7px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #E3E6E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav .icon {
+    display: none;
+  }
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.topnav a:hover, .dropdown:hover .dropbtn {
+    color: #A3A889;
+  }
+.dropdown-content a:hover {
+    background-color: #A3A889;
+    color: black;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+h1 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    background-color: #A3A889;
+    padding: 6%;
+}
+h2 {
+  text-decoration: underline;
+  font-size: 25px;
+  padding: 5%;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+}
+.link_button_hvid {
+    background-color: #E3E6E4;
+    border: solid 1px #3D431C;
+    color: black;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .link_button_hvid:hover {
+    background-color: #A3A889;
+  }
+  .link_button_grøn {
+    background-color: #A3A889;
+    border: solid 1px #3D431C;
+    color: black;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .link_button_grøn:hover {
+    background-color: #E3E6E4;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+/* -- Forside -- */
+.forside_billede {
+    width: 150%;
+    max-width: none;
+    margin-left: -25%;
+    filter: blur(2px);
+}
+.forside_container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+.centered1 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    color: #E3E6E4;
+  }
+.centered2 {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: #E3E6E4;
+  }
+.forside_tekst {
+    padding: 4% 10% 5% 10%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+}
+#christmas {
+ background-color: #A3A889;
+}
+.minigolf_overskrift {
+  text-align: center;
+  padding: 6% 0 3% 0;
+}
+.camping_forside {
+  width: 90%;
+  padding: 0 5% 0 5%;
+}
+.camping_forside_tekst {
+  text-align: center;
+  padding: 3% 5% 5% 5%;
+}
+.bryghus_forside {
+  background-color: #A3A889;
+}
+.bryghus_overskrift {
+  text-align: center;
+  padding-top: 8%;
+}
+.bryghus_tekst {
+  text-align: center;
+  padding: 3% 5% 5% 5%;
+}
+.bryghus_billede {
+  width: 90%;
+  padding: 0 5% 8% 5%;
+}
+.nyhedsbrev_overskrift {
+  padding-left: 0;
+}
+.form {
+  color: black;
+  background-color: #E3E6E4;
+}
+.container {
+  padding: 2% 10% 2% 10%;
+}
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1.5px solid #3D431C;
+  box-sizing: border-box;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  color: black;
+  background-color: #E3E6E4;
+}
+input[type=submit] {
+  width: 60%;
+  background-color: #A3A889;
+  border: solid 1px #3D431C;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* -- udvalg siden -- */
+.smage_container {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "dåse_overskrift"
+    "dåse"
+    "dåse_tekst";
+}
+.dåse { 
+  grid-area: dåse; 
+  width: 85%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+.dåse_overskrift { 
+  grid-area: dåse_overskrift; 
+  text-align: center;
+}
+.dåse_tekst { 
+  grid-area: dåse_tekst;
+  padding: 3% 15% 5% 15%;
+  line-height: 1.7;
+ }
+.smage_container_grøn {  
+  background-color: #A3A889;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "dåse_overskrift"
+    "dåse"
+    "dåse_tekst";
+}
+ .collapsible_hvid {
+  background-color:#E3E6E4;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: solid #3D431C;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.collapsible_grøn {
+  background-color: #A3A889;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: solid #3D431C;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.active, .collapsible_hvid:hover {
+  background-color: #A3A889;
+}
+.active, .collapsible_grøn:hover {
+  background-color: #E3E6E4;
+}
+.content {
+  padding: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border: none;
+}
+table, td, th {  
+  border: 1px solid #3D431C;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 5px;
+}
+/* -- ølsmagning siden -- */
+.oel_container {  
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10% 5% 10%;
+  align-items: center;
+  text-align: center;
+}
+.oel_billede {
+  max-width: 100%;
+}
+.oel_tekst {
+  padding-top: 6%;
+  line-height: 2;
+}
+.skaal_container {
+  background-color: #A3A889;
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10% 6% 10%;
+  align-items: center;
+  text-align: center;
+}
+.skaal_tekst {
+  padding-top: 6%;
+  line-height: 2;
+}
+.tilmeld_tekst {
+  background-color: #A3A889;
+  line-height: 2;
+  text-align: center;
+  padding: 0% 10% 5% 10%;
+}
+.tilmeld_tekst1 {
+  line-height: 2;
+  text-align: center;
+  padding: 0 10% 5% 10%;
+}
+.camping_overskrift {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+}
+.camping_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 2% 10%;
+  align-items: center;
+  text-align: center;
+}
+.camping_tekst {
+  padding-bottom: 10%;
+  line-height: 2;
+}
+/* --- Kalender --- */
+.kalender {
+  background-color: #A3A889;
+}
+.kalender_overskrift {
+  text-align: center;
+}
+h4 {
+  text-decoration: underline;
+  padding: 15% 0 8% 0;
+  font-size: 18px;
+}
+.kalender_container {
+  display: grid;
+  padding: 0 5% 20% 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1% 4%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "januar11 januar25"
+    "februar8 februar22"
+    "marts7 marts28"
+    "april11 april25";
+}
+.januar11 { 
+  grid-area: januar11;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+ }
+.januar25 { 
+  grid-area: januar25;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+ }
+.februar8 { 
+  grid-area: februar8;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+}
+.februar22 { 
+  grid-area: februar22;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+ }
+.marts7 { 
+  grid-area: marts7;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+}
+.marts28 { 
+  grid-area: marts28;
+  background-color: #E3E6E4;
+  border: dotted 8px #3D431C;
+  max-width: 210px;
+ }
+.april11 { 
+  grid-area: april11;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+ }
+.april25 { 
+  grid-area: april25;
+  background-color: #E3E6E4;
+  border: dotted 5px #3D431C;
+  max-width: 210px;
+ }
+ .kalender_tekst {
+  padding: 0 6% 15% 6%;
+  font-size: 15px;
+ }
+ .kalender_camping {
+  width: 100%;
+ }
+
+/* -- historie siden -- */
+.historie_container {
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10% 8% 10%;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+}
+.historie_billede {
+  max-width: 80%;
+  padding: 5%;
+}
+.far_datter_container {
+  background-color: #A3A889;
+  display: flex;
+  padding-top: 3%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+}
+.far_datter_billede {
+  max-width: 80%;
+  padding: 10%;
+}
+.far_datter_tekst {
+  padding: 0 10% 5% 10%;
+}
+#tre_spejl {
+  background-color: #E3E6E4;
+}
+/* -- kontakt siden -- */
+.kontakt_container {
+  display: flex;
+  flex-direction: column;
+}
+.kontakt_overskrift {
+  padding: 5% 10% 0 10%;
+}
+.kontakt_tekst {
+  padding: 2% 10% 3% 10%;
+}
+.kontakt_tekst a {
+  text-decoration: underline;
+}
+.bryghus_kontakt {
+  width: 90%;
+  padding: 0 5% 8% 5%;
+}
+/* -- tilmelding og ombygning -- */
+.ombygning_overskrift {
+  text-align: center;
+  padding-bottom: 10%;
+  text-decoration: none;
+}
+.plantebillede {
+  width: 90%;
+  padding: 15% 5% 5% 5%;
+}
+/* -- footer -- */
+footer {
+    background-color: #3D431C; 
+    color: #E3E6E4;
+    padding: 10px;
+    font-size: 18px;
+  }
+.footer_container {
+    display: grid;
+    align-items: baseline;
+    padding: 8% 0 5% 18%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px 0px;
+    grid-template-areas:
+      "adresse"
+      "kontakt"
+      "åbningstider"
+      "sociale_medier";
+  }
+  .adresse { 
+    grid-area: adresse; 
+  }
+  .kontakt { 
+    grid-area: kontakt; 
+  }
+  .åbningstider { 
+    grid-area: åbningstider; 
+  }
+  .sociale_medier { 
+    grid-area: sociale_medier; 
+  }
+.kontakt a {
+  color: #E3E6E4;
+  text-decoration: underline;
+}
+.footer_overskrift {
+  text-decoration: none;
+  color: #E3E6E4;
+  font-weight: bold;
+  padding: 0;
+  font-size: 17px;
+}
+/*--- Sociale medier ---*/
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .social-icons a {
+    margin: 6px;
+    text-decoration: none;
+  }
+  /*---Ikonbilleder---*/
+  .social-icons img {
+    width: 30px; 
+    height: auto;
+  }
+
+  @media screen and (min-width: 560px) {
+    .kalender_container {
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2% 3%; 
+      grid-template-areas: 
+      "januar11 januar25 februar8"
+      "februar22 marts7 marts28"
+      "april11 april25 ."; 
+      padding-bottom: 8%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .forside_billede {
+      width: 100%;
+      margin: 0;
+    }
+    .centered1 {
+      font-size: 8vw;
+    }
+    .centered2 {
+      font-size: 2vw;
+    }
+    #christmas_overskrift {
+      padding-top: 5%;
+    }
+    h1 {
+      font-size: 35px;
+      padding: 3%;
+    }
+    .camping_forside {
+      width: 70%;
+      padding: 0 15% 0 15%;
+    }
+    .bryghus_overskrift {
+      text-align: center;
+      padding: 4% 0 3% 0;
+    }
+    .bryghus_tekst {
+      text-align: center;
+      padding: 1% 5% 3% 5%;
+    }
+    .bryghus_billede {
+      width: 60%;
+      padding: 0 20% 5% 20%;
+    }
+    .container {
+      padding: 1% 20% 1% 20%;
+    }
+    input[type=text], input[type=submit] {
+      width: 80%;
+    }
+    input[type=submit] {
+      width: 40%;
+    }
+    .smage_container { 
+      padding: 5% 5% 5% 5%;
+      align-items: center; 
+      grid-template-columns: 1.5fr 1.5fr;
+      grid-template-rows: auto;
+      grid-auto-rows: 1fr;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "dåse dåse_overskrift"
+        "dåse dåse_tekst";
+      }
+    .dåse { 
+      grid-area: dåse;
+     }
+    .dåse_overskrift { 
+      grid-area: dåse_overskrift;
+      text-align: left;
+      padding-left: 10%;
+     } 
+    .dåse_tekst { 
+      grid-area: dåse_tekst;
+      padding-top: 0;
+    }
+    .smage_container_grøn { 
+      padding: 5% 5% 5% 5%;
+      align-items: center; 
+      grid-template-columns: 1.5fr 1.5fr;
+      grid-template-rows: auto;
+      grid-auto-rows: 1fr;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "dåse_overskrift dåse"
+        "dåse_tekst dåse";
+      }
+    .dåse { 
+      grid-area: dåse;
+     }
+    .dåse_overskrift { 
+      grid-area: dåse_overskrift;
+      text-align: left;
+      padding-left: 10%;
+     } 
+    .dåse_tekst { 
+      grid-area: dåse_tekst;
+      padding-top: 0;
+    }
+    .smage_container h2 {
+      font-size: 30px;
+    }
+    .smage_container_grøn h2 {
+      font-size: 30px;
+    }
+    .oel_container {
+      flex-direction: row-reverse;
+      padding: 5% 10% 5% 10%;
+    }
+    .oel_billede {
+      max-width: 100%;
+    }
+    .oel_tekst {
+      width: 90%;
+      padding-right: 10%;
+      padding-top: 0;
+    }
+    .skaal_container {
+      flex-direction: row;
+      padding: 5% 10% 3% 10%;
+    }
+    .skaal_billede {
+      padding: 0;
+      width: 100%;
+    }
+    .skaal_tekst {
+      width: 90%;
+      padding-left: 10%;
+      padding-top: 0;
+    }
+    .tilmeld_tekst {
+      padding-bottom: 3%;
+    }
+    .tilmeld_tekst1 {
+      padding-bottom: 3%;
+    }
+    .camping_overskrift {
+      width: 60%;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+    .camping_container {
+      flex-direction: row;
+      padding: 0 10% 2% 10%;
+    }
+    .camping_tekst {
+      width: 90%;
+      padding-right: 10%;
+      padding-bottom: 0;
+    }
+    .historie_container {  
+      display: grid;
+      padding: 2% 15% 2% 15%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "historie_tekst historie_billede"
+        "historie_tekst1 historie_billede";
+    }
+    .historie_billede { 
+      grid-area: historie_billede;
+      max-width: 90%;
+      padding-left: 10%;
+     }
+    .historie_tekst { 
+      grid-area: historie_tekst;
+      padding: 10% 5% 0 0;
+     }
+    .historie_tekst1 { 
+      grid-area: historie_tekst1;
+      padding: 0 5% 10% 0;
+     }
+    .far_datter_billede {
+      max-width: 50%;
+      padding: 2% 25% 4% 25%;
+    }
+    .ombygning_overskrift {
+      text-align: center;
+      padding-bottom: 3%;
+      text-decoration: none;
+    }
+    .plantebillede {
+      width: 60%;
+      padding: 5% 20% 0% 20%;
+    }
+    .kalender_container {
+      padding: 0 15% 10% 15%;
+      grid-auto-columns: 1fr; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 10% 3%; 
+      grid-template-areas: 
+      "januar11 januar25 februar8 februar22"
+      "marts7 marts28 april11 april25"; 
+    }
+    .kontakt_container {
+      display: flex;
+      flex-direction: row;
+      padding: 4% 10% 3% 10%;
+    }
+    .kontakt_overskrift {
+      padding: 5% 10% 0 0;
+    }
+    .kontakt_tekst {
+      padding: 2% 10% 3% 0;
+    }
+    .kontakt_tekst a {
+      text-decoration: underline;
+    }
+    .bryghus_kontakt {
+      width: 100%;
+      padding: 0;
+    }
+    .kontakt_element1 {
+      width: 110%
+    }
+
+    /*--- Footer ---*/
+    .footer_container {  
+      padding: 2% 15% 2% 15%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 30px 40%;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "adresse åbningstider"
+        "kontakt sociale_medier";
+    }
+    .adresse { grid-area: adresse; }
+    .åbningstider { grid-area: åbningstider; }
+    .kontakt { grid-area: kontakt; }
+    .sociale_medier { grid-area: sociale_medier; }
+  }
+
+
+
+/*--- Header ---*/
+  @media screen and (max-width: 860px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      font-size: 40px;
+      margin-top: 6px;
+    }
+    .topnav {
+        display: block;
+        flex-direction: column;
+      }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    } 
+  }
